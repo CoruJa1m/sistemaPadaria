@@ -1,0 +1,165 @@
+PROJETO FINAL — SISTEMA DE GERENCIAMENTO DE PADARIA
+
+OBJETIVO
+Criar um sistema em Visualg para gerenciar uma padaria. O programa deverá permitir:
+- cadastrar produtos
+- registrar vendas
+- controlar estoque
+- calcular faturamento
+- gerar relatórios
+- utilizar busca, ordenação e recursividade
+
+==================================================
+CONTEÚDOS QUE DEVEM SER UTILIZADOS
+==================================================
+
+- Operadores lógicos
+- Estruturas condicionais
+- Vetores
+- Matrizes
+- Busca linear
+- Busca binária
+- Selection Sort ou QuickSort
+- Procedimentos
+- Funções
+- Recursividade
+- Laços de repetição
+
+==================================================
+FUNCIONALIDADES OBRIGATÓRIAS
+==================================================
+
+1. CADASTRO DE PRODUTOS
+
+Cadastrar até 20 produtos contendo:
+
+- Código
+- Nome
+- Preço de venda
+- Custo de produção
+- Quantidade em estoque
+- Estoque mínimo
+
+==================================================
+
+2. REGISTRO DE VENDA
+
+O usuário deve informar:
+
+- Código do produto
+- Quantidade vendida
+- Forma de pagamento
+
+REGRAS:
+
+Se o produto existir E houver estoque suficiente:
+   realizar a venda
+Senão:
+   mostrar mensagem de erro
+
+DESCONTO:
+
+Se quantidade >= 10 OU pagamento = dinheiro:
+   aplicar 5% de desconto
+
+==================================================
+
+3. CONTROLE DE ESTOQUE
+
+Após cada venda:
+
+estoque = estoque - quantidade vendida
+
+Se o estoque ficar abaixo do estoque mínimo:
+   mostrar alerta de reposição
+
+==================================================
+
+4. MATRIZ DE VENDAS
+
+Guardar as vendas em uma matriz:
+
+vendas[produto, dia]
+
+Exemplo:
+
+vendas[3,2] = quantidade vendida do produto 3 no dia 2
+
+Utilizar 7 dias para simular uma semana.
+
+==================================================
+
+5. RELATÓRIOS
+
+O sistema deve mostrar:
+
+- Total vendido por produto
+- Faturamento total
+- Lucro total
+- Produto mais vendido
+- Produto com menor estoque
+- Produtos abaixo do estoque mínimo
+
+==================================================
+
+6. BUSCAS
+
+Implementar:
+
+- Busca linear por nome do produto
+- Busca binária por código do produto
+
+==================================================
+
+7. ORDENAÇÃO
+
+Implementar pelo menos um dos algoritmos:
+
+- Selection Sort por preço
+OU
+- QuickSort por código
+
+==================================================
+
+8. RECURSIVIDADE
+
+Criar uma função recursiva para calcular o total vendido na semana.
+
+Exemplo:
+
+totalSemana(produto, dia)
+
+A função deve somar as vendas do dia 1 até o dia 7.
+
+==================================================
+
+MENU SUGERIDO
+
+1 - Cadastrar produtos
+2 - Registrar venda
+3 - Buscar produto por nome
+4 - Buscar produto por código
+5 - Ordenar produtos
+6 - Relatório geral
+7 - Produtos com estoque baixo
+0 - Sair
+
+==================================================
+
+DESAFIO BÔNUS
+
+Adicionar validade dos produtos:
+
+- Dias para vencer
+
+Aplicar a seguinte regra:
+
+Se dias para vencer <= 2 E estoque > 0:
+   sugerir promoção
+
+==================================================
+
+OBJETIVO PEDAGÓGICO
+
+Esse projeto deve integrar todos os conteúdos estudados durante o semestre,
+aproximando os alunos de um sistema real de gerenciamento.
